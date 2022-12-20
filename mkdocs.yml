@@ -1,0 +1,49 @@
+site_name: Pemrograman Berorientasi Objek
+
+theme:
+  name: material
+  highlightjs: true
+  hljs_languages:
+    - py
+    - csharp
+    - java
+    - vbnet
+
+plugin:
+  - search
+
+markdown_extensions:
+  - pymdownx.superfences
+  - pymdownx.critic
+  - pymdownx.caret
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.tilde
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - def_list
+  - pymdownx.tasklist:
+      custom_checkbox: true
+
+edit_uri: ""
+
+nav:
+  - Home: 'index.md'
+  - "01. Konsep Pemrograman Berorientasi Objek" : "01_konsep_pemrograman_berorientasi_objek.md"
+  - "02. Praktik Pendekatan Pemrograman Berorientasi Objek" : "02_praktik_pendekatan_pbo.md"
+  - "03. Variable Tipe Data" : "03_tipe_data_dan_operator.md"
+  - "04. Operator Kondisi" : "04_conditional.md"
+  - "05. Operator Perulangan" : "05_loops.md"
+  - "06. Tipe data Himpunan / Array" : "06_array_list.md"
+  - "07. Konsep Pemodelan" : "07_konsep_pemodelan.md"
+  - "08." : "08_konsep_pemodelan.md"
+  - "09." : "09_konsep_pemodelan.md"
+  - "10. Penanganan Error" : "10_error_handling.md"
+  - "11. Multi Threading" : "11_multithreading.md"
+  - "12. Input dan Output I/O" : "12_io.md"
+  - "13. Enkripsi" : "13_enkripsi_tradisional.md"
+  - "14. GUI Basic" : "14_gui_basic.md"
+  - "15. GUI Database" : "15_gui_database.md"
