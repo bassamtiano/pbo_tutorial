@@ -13,6 +13,8 @@ plugin:
   - search
 
 markdown_extensions:
+  - attr_list
+  - md_in_html
   - pymdownx.superfences
   - pymdownx.critic
   - pymdownx.caret
@@ -37,7 +39,9 @@ nav:
   - "03. Variable Tipe Data" : "03_tipe_data_dan_operator.md"
   - "04. Operator Kondisi" : "04_conditional.md"
   - "05. Operator Perulangan" : "05_loops.md"
-  - "06. Tipe data Himpunan / Array" : "06_array_list.md"
+  - "06. Tipe data Himpunan / Array" : 
+    - '06.1. Array : Intro' : "06_array_list.md"
+    - '06.2. Array' : "array/array_1.md"
   - "07. Konsep Pemodelan" : "07_konsep_pemodelan.md"
   - "08." : "08_konsep_pemodelan.md"
   - "09." : "09_konsep_pemodelan.md"

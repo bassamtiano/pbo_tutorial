@@ -1,1 +1,1 @@
-polymorphism, inheritance
+encapsulation, polymorphism, inheritance

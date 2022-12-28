@@ -1,6 +1,3 @@
-
-# **Pendekatan Pemrograman Berorientasi Objek**
-
 Slide : 
 
 Pada bagian ini akan dipelajari bagaimana pengimplementasian dasar konsep pemrograman berorientasi objek. Pada bagian ini kita akan mempelajari pembuatan dan penggunaan class. serta 
