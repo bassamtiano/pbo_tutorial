@@ -49,12 +49,16 @@
   
     
     
+      
     
     
     
-    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="None" data-md-color-accent="None">
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="" data-md-color-accent="">
   
     
+    
+      <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
     
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
@@ -101,6 +105,40 @@
         </div>
       </div>
     </div>
+    
+      <form class="md-header__option" data-md-component="palette">
+        
+          
+          
+          
+          <input class="md-option" data-md-color-media="(prefers-color-scheme)" data-md-color-scheme="default" data-md-color-primary="" data-md-color-accent=""  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+          
+            <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_3" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m14.3 16-.7-2h-3.2l-.7 2H7.8L11 7h2l3.2 9h-1.9M20 8.69V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69m-9.15 3.96h2.3L12 9l-1.15 3.65Z"/></svg>
+            </label>
+          
+        
+          
+          
+          
+          <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="" data-md-color-accent=""  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_2">
+          
+            <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+            </label>
+          
+        
+          
+          
+          
+          <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="" data-md-color-accent=""  aria-label="Switch to system preference"  type="radio" name="__palette" id="__palette_3">
+          
+            <label class="md-header__button md-icon" title="Switch to system preference" for="__palette_2" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12c0-2.42-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+            </label>
+          
+        
+      </form>
     
     
     
@@ -234,6 +272,54 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#pembukaan" class="md-nav__link">
+    Pembukaan
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#kelebihan" class="md-nav__link">
+    Kelebihan
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#konsep" class="md-nav__link">
+    Konsep
+  </a>
+  
+    <nav class="md-nav" aria-label="Konsep">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#class" class="md-nav__link">
+    Class
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#objek" class="md-nav__link">
+    Objek
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#data-abstraction" class="md-nav__link">
+    Data Abstraction
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#inheritance" class="md-nav__link">
     Inheritance
   </a>
@@ -261,6 +347,13 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#latihan" class="md-nav__link">
+    Latihan
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -283,7 +376,7 @@
   
     <li class="md-nav__item">
       <a href="../02_praktik_pendekatan_pbo/" class="md-nav__link">
-        02. Praktik Pendekatan Pemrograman Berorientasi Objek
+        02. Praktik Pendekatan PBO
       </a>
     </li>
   
@@ -297,7 +390,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../03_tipe_data_dan_operator/" class="md-nav__link">
+      <a href="../03.1_tipe_data/" class="md-nav__link">
         03. Variable Tipe Data
       </a>
     </li>
@@ -341,10 +434,57 @@
   
   
   
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_7" type="checkbox" id="__nav_7" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_7">
+          06. Tipe data Himpunan / Array
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="06. Tipe data Himpunan / Array" data-md-level="1">
+        <label class="md-nav__title" for="__nav_7">
+          <span class="md-nav__icon md-icon"></span>
+          06. Tipe data Himpunan / Array
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
     <li class="md-nav__item">
       <a href="../06_array_list/" class="md-nav__link">
-        06. Tipe data Himpunan / Array
+        06.1. Array : Intro
       </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../array/array_1/" class="md-nav__link">
+        06.2. Array
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
     </li>
   
 
@@ -517,6 +657,54 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#pembukaan" class="md-nav__link">
+    Pembukaan
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#kelebihan" class="md-nav__link">
+    Kelebihan
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#konsep" class="md-nav__link">
+    Konsep
+  </a>
+  
+    <nav class="md-nav" aria-label="Konsep">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#class" class="md-nav__link">
+    Class
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#objek" class="md-nav__link">
+    Objek
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#data-abstraction" class="md-nav__link">
+    Data Abstraction
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#inheritance" class="md-nav__link">
     Inheritance
   </a>
@@ -544,6 +732,13 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#latihan" class="md-nav__link">
+    Latihan
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -567,12 +762,62 @@
   <h1>01. Konsep Pemrograman Berorientasi Objek</h1>
 
 <h2 id="pendekatan-desain-dan-program-berorientasi-objek">Pendekatan Desain dan Program Berorientasi Objek</h2>
+<h3 id="pembukaan">Pembukaan</h3>
+<p>Pemrograman Berorientasi Objek <strong><em>(Object Oriented Programming)</em></strong> seperti terdeskripsikan pada namanya merupakan metode pemrograman yang menggunakan objek. 
+Pemrograman Berorientasi Objek bertujuan untuk menyatukan kedalam suatu <strong>class</strong>, data dan fungsi yang beroperasi pada konteks class tersebut</p>
+<h3 id="kelebihan">Kelebihan</h3>
+<p>Pendekatan Desain dan Program Berorientasi Objek memiliki kelebihan diantaranya :</p>
+<ol>
+<li>
+<p><strong>Tidak terjadi perulangan</strong> pembuatan fungsi yang sama pada code / Keep Java code DRY (Don’t Repeat Yourself) 
+Karena setiap operasi / tipe data terpisah dan di wakilkan oleh class, maka tidak code / program dibuat berulang.</p>
+</li>
+<li>
+<p>Program lebih <strong>terstruktur secara rapi</strong>
+Karena setiap operasi terpisah yang diwakili oleh class, maka tidak ada operasi-operasi yang tercampur.</p>
+</li>
+<li>
+<p>Cepat dan Mudah untuk di eksekusi (dari sisi compile program)
+Tidak adanya </p>
+</li>
+</ol>
+<p>Serangkaian Code yang memiliki fungsi yang sama disatukan dan dipisahkan sebagai fungsi</p>
+<p>Memudahkan Code untuk dikelola, dimodifikasi, dan didebug
+Memungkinkan untuk code yang dibuat untuk sebuah program dapat digunakan untuk program yang lainnya tanpa harus membuat code baru.</p>
+<div class="admonition question">
+<p class="admonition-title">Pertanyaan</p>
+<p>Berikan Contoh Lain dari kelebihan pengaplikasian Pemrograman Berorientasi Objek pada program yang kita buat.</p>
+</div>
+<h2 id="konsep">Konsep</h2>
+<figure>
+<p><img alt="Image title" src="../assets/01_PBO_Entity_Class.png" width="600" />
+  </p>
+<figcaption>Struktur Class</figcaption>
+</figure>
+<p>Seperti di jelaskan pada pembukaan, Pemrograman Berorientasi Objek di applikasikan pada </p>
+<p>Untuk memudahkan kita untuk mengerti tentang konsep dari Pemrograman Berorientasi Objek, </p>
+<figure>
+<p><img alt="Image title" src="../assets/01_Sequential_Programming.png" width="600" />
+  </p>
+<figcaption>Pendekatan Pemrogramman Sequensial</figcaption>
+</figure>
+<figure>
+<p><img alt="Image title" src="../assets/01_PBO_Approach.png" width="600" />
+  </p>
+<figcaption>Pendekatan Pemrogramman Berorientasi Objek</figcaption>
+</figure>
+<h3 id="class">Class</h3>
+<h3 id="objek">Objek</h3>
+<p>Merupakan sebuah unit dasar dari Pemrograman Berorientasi Objek dan merepresentasikan entitas dunia nyata (real life entity). Sebuah objek adalah </p>
+<h3 id="data-abstraction">Data Abstraction</h3>
 <h3 id="inheritance">Inheritance</h3>
 <p><strong>Inheritance</strong> Merupakan teknik mewariskan <strong>fungsi/method</strong> yang ada di <strong>satu class</strong> ke <strong>class lainnya</strong>. Pada Inheritance terdiri dari 2 Kateogri.
 1.  <strong> Sub Class (Child) </strong></p>
 <h3 id="polymorphism">Polymorphism</h3>
 <h3 id="encapsulation">Encapsulation</h3>
 <h3 id="abstraction">Abstraction</h3>
+<h3 id="latihan">Latihan</h3>
+<p>Diberikan </p>
 
 
 
@@ -609,13 +854,13 @@
       
       
         
-        <a href="../02_praktik_pendekatan_pbo/" class="md-footer__link md-footer__link--next" aria-label="Next: 02. Praktik Pendekatan Pemrograman Berorientasi Objek" rel="next">
+        <a href="../02_praktik_pendekatan_pbo/" class="md-footer__link md-footer__link--next" aria-label="Next: 02. Praktik Pendekatan PBO" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Next
               </span>
-              02. Praktik Pendekatan Pemrograman Berorientasi Objek
+              02. Praktik Pendekatan PBO
             </div>
           </div>
           <div class="md-footer__button md-icon">

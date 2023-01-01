@@ -13,7 +13,7 @@
     
     
       
-        <title>07. Konsep Pemodelan - Pemrograman Berorientasi Objek</title>
+        <title>03.2 operator - Pemrograman Berorientasi Objek</title>
       
     
     
@@ -65,6 +65,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#pendahuluan" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -94,7 +99,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              07. Konsep Pemodelan
+              03.2 operator
             
           </span>
         </div>
@@ -364,19 +369,11 @@
 
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-      
-      
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../07_konsep_pemodelan/" class="md-nav__link">
         07. Konsep Pemodelan
       </a>
-      
     </li>
   
 
@@ -519,6 +516,77 @@
   
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#pendahuluan" class="md-nav__link">
+    Pendahuluan
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tipe-data" class="md-nav__link">
+    Tipe Data
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#number" class="md-nav__link">
+    Number
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#character" class="md-nav__link">
+    Character
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#booleans" class="md-nav__link">
+    Booleans
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#string" class="md-nav__link">
+    String
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#array" class="md-nav__link">
+    Array
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#konversi-tipe-data" class="md-nav__link">
+    Konversi Tipe Data
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#latihan" class="md-nav__link">
+    Latihan
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -532,9 +600,61 @@
                   
 
 
-  <h1>07. Konsep Pemodelan</h1>
+  <h1>03.2 operator</h1>
 
-<p>class method constructor variable global access level (private public protected)</p>
+<h2 id="pendahuluan">Pendahuluan</h2>
+<p>Pada setiap bahasa pemrograman terdapat berbagai tipe bahasa pemrograman seperti</p>
+<p>Variable merupakan penampung untuk menyimpan data nilai. </p>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>Pada Bahasa Pemrograman <strong>Kotlin</strong> Terdapat 2 golongan variable yaitu <strong><em>val</em></strong> dan <strong><em>var</em></strong>. <strong><em>var</em></strong> digunakan saat sebuah variable isinya dapat di rubah / di modifikasi dan 
+<strong><em>val</em></strong> digunakan saat sebuah variable isinya tidak dapat di rubah</p>
+</div>
+<h2 id="tipe-data"><strong>Tipe Data</strong></h2>
+<p>Tipe data terdiri dari 5 kelompok.</p>
+<ol>
+<li>Number</li>
+<li>Character</li>
+<li>Booleans</li>
+<li>String, dan</li>
+<li>Array</li>
+</ol>
+<h2 id="number"><strong>Number</strong></h2>
+<p>Number / Angka dibagi menjadi 2 kelompok :</p>
+<ol>
+<li>
+<p>Integer
+Menyimpan seluruh angka, positif atau negatif (seperti 100 atau -100) tanpa desimal.</p>
+<ul>
+<li>
+<p>Byte</p>
+</li>
+<li>
+<p>Integer</p>
+</li>
+</ul>
+</li>
+<li>
+<p>Floating point</p>
+</li>
+</ol>
+<h2 id="character"><strong>Character</strong></h2>
+<p>Character / <strong>Char</strong> merupakan tipe data yang menyimpan sebuah karakter. Sebuah nilai <strong>char</strong> harus di antara tanda petik 1.</p>
+<h2 id="booleans"><strong>Booleans</strong></h2>
+<p>Boolean merupakan tipe data yang hanya dapat menerima nilai <strong>true</strong> <em>(benar)</em> atau <strong>false</strong> <em>(salah)</em>. Boolean biasanya digunakan untuk pengujian kondisi.</p>
+<h2 id="string"><strong>String</strong></h2>
+<p>String merupakan tipe data yang menyimpan sebuah rangkaian dari karakter <em>(text)</em>. Nilai string harus di antara tanda petik 2.</p>
+<h2 id="array"><strong>Array</strong></h2>
+<p>Array merupakan tipe data yang digunakan untuk menyipan beberapa nilai dari sebuah variable, sebagai pengganti pembuatan variable yang terpisah untuk setiap nilai. 
+Array akan lebih dalam dibahas di Chapter Array</p>
+<h2 id="konversi-tipe-data"><strong>Konversi Tipe Data</strong></h2>
+<p>Konversi tipe data di lakukan saat sebuah nilai dari sebuah variable ingin di konversikan ke tipe data lain. </p>
+<div class="admonition note">
+<p class="admonition-title">Contoh</p>
+<p>Apabila ingin mendapatkan variable bilangan bulat namun nilai nya berasal dari variable dengan tipe data float yang merupakan bilangan desimal.
+Untuk mendapatkan nilai bilangan bulat dari nilai bilangan desimal tersebut dilakukan konversi dari tipe data float ke integer.</p>
+</div>
+<h2 id="latihan"><strong>Latihan</strong></h2>
 
 
 
@@ -550,42 +670,6 @@
       </main>
       
         <footer class="md-footer">
-  
-    
-    <nav class="md-footer__inner md-grid" aria-label="Footer" >
-      
-        
-        <a href="../array/array_1/" class="md-footer__link md-footer__link--prev" aria-label="Previous: 06.2. Array" rel="prev">
-          <div class="md-footer__button md-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
-          </div>
-          <div class="md-footer__title">
-            <div class="md-ellipsis">
-              <span class="md-footer__direction">
-                Previous
-              </span>
-              06.2. Array
-            </div>
-          </div>
-        </a>
-      
-      
-        
-        <a href="../08_konsep_pemodelan/" class="md-footer__link md-footer__link--next" aria-label="Next: 08." rel="next">
-          <div class="md-footer__title">
-            <div class="md-ellipsis">
-              <span class="md-footer__direction">
-                Next
-              </span>
-              08.
-            </div>
-          </div>
-          <div class="md-footer__button md-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
-          </div>
-        </a>
-      
-    </nav>
   
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">

@@ -8,19 +8,19 @@
       
       
       
-      <link rel="icon" href="../assets/images/favicon.png">
+      <link rel="icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-8.5.10">
     
     
       
-        <title>03. Variable Tipe Data - Pemrograman Berorientasi Objek</title>
+        <title>06.2. Array - Pemrograman Berorientasi Objek</title>
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.975780f9.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.975780f9.min.css">
       
         
-        <link rel="stylesheet" href="../assets/stylesheets/palette.2505c338.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.2505c338.min.css">
         
       
       
@@ -37,7 +37,7 @@
       
     
     
-    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -49,22 +49,21 @@
   
     
     
+      
     
     
     
-    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="None" data-md-color-accent="None">
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="" data-md-color-accent="">
   
     
+    
+      <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
     
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
-      
-        
-        <a href="#tipe-data" class="md-skip">
-          Skip to content
-        </a>
       
     </div>
     <div data-md-component="announce">
@@ -76,7 +75,7 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href=".." title="Pemrograman Berorientasi Objek" class="md-header__button md-logo" aria-label="Pemrograman Berorientasi Objek" data-md-component="logo">
+    <a href="../.." title="Pemrograman Berorientasi Objek" class="md-header__button md-logo" aria-label="Pemrograman Berorientasi Objek" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
@@ -95,12 +94,46 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              03. Variable Tipe Data
+              06.2. Array
             
           </span>
         </div>
       </div>
     </div>
+    
+      <form class="md-header__option" data-md-component="palette">
+        
+          
+          
+          
+          <input class="md-option" data-md-color-media="(prefers-color-scheme)" data-md-color-scheme="default" data-md-color-primary="" data-md-color-accent=""  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+          
+            <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_3" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m14.3 16-.7-2h-3.2l-.7 2H7.8L11 7h2l3.2 9h-1.9M20 8.69V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69m-9.15 3.96h2.3L12 9l-1.15 3.65Z"/></svg>
+            </label>
+          
+        
+          
+          
+          
+          <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="" data-md-color-accent=""  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_2">
+          
+            <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+            </label>
+          
+        
+          
+          
+          
+          <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="" data-md-color-accent=""  aria-label="Switch to system preference"  type="radio" name="__palette" id="__palette_3">
+          
+            <label class="md-header__button md-icon" title="Switch to system preference" for="__palette_2" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12c0-2.42-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+            </label>
+          
+        
+      </form>
     
     
     
@@ -162,7 +195,7 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href=".." title="Pemrograman Berorientasi Objek" class="md-nav__button md-logo" aria-label="Pemrograman Berorientasi Objek" data-md-component="logo">
+    <a href="../.." title="Pemrograman Berorientasi Objek" class="md-nav__button md-logo" aria-label="Pemrograman Berorientasi Objek" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
@@ -181,7 +214,7 @@
   
   
     <li class="md-nav__item">
-      <a href=".." class="md-nav__link">
+      <a href="../.." class="md-nav__link">
         Home
       </a>
     </li>
@@ -196,7 +229,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../01_konsep_pemrograman_berorientasi_objek/" class="md-nav__link">
+      <a href="../../01_konsep_pemrograman_berorientasi_objek/" class="md-nav__link">
         01. Konsep Pemrograman Berorientasi Objek
       </a>
     </li>
@@ -211,61 +244,9 @@
   
   
     <li class="md-nav__item">
-      <a href="../02_praktik_pendekatan_pbo/" class="md-nav__link">
-        02. Praktik Pendekatan Pemrograman Berorientasi Objek
+      <a href="../../02_praktik_pendekatan_pbo/" class="md-nav__link">
+        02. Praktik Pendekatan PBO
       </a>
-    </li>
-  
-
-    
-      
-      
-      
-
-  
-  
-    
-  
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-      
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          03. Variable Tipe Data
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
-        03. Variable Tipe Data
-      </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#tipe-data" class="md-nav__link">
-    Tipe Data
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -278,7 +259,22 @@
   
   
     <li class="md-nav__item">
-      <a href="../04_conditional/" class="md-nav__link">
+      <a href="../../03.1_tipe_data/" class="md-nav__link">
+        03. Variable Tipe Data
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../04_conditional/" class="md-nav__link">
         04. Operator Kondisi
       </a>
     </li>
@@ -293,7 +289,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../05_loops/" class="md-nav__link">
+      <a href="../../05_loops/" class="md-nav__link">
         05. Operator Perulangan
       </a>
     </li>
@@ -306,11 +302,68 @@
 
   
   
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_7" type="checkbox" id="__nav_7" checked>
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_7">
+          06. Tipe data Himpunan / Array
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="06. Tipe data Himpunan / Array" data-md-level="1">
+        <label class="md-nav__title" for="__nav_7">
+          <span class="md-nav__icon md-icon"></span>
+          06. Tipe data Himpunan / Array
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
   
     <li class="md-nav__item">
-      <a href="../06_array_list/" class="md-nav__link">
-        06. Tipe data Himpunan / Array
+      <a href="../../06_array_list/" class="md-nav__link">
+        06.1. Array : Intro
       </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        06.2. Array
+      </a>
+      
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
     </li>
   
 
@@ -323,7 +376,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../07_konsep_pemodelan/" class="md-nav__link">
+      <a href="../../07_konsep_pemodelan/" class="md-nav__link">
         07. Konsep Pemodelan
       </a>
     </li>
@@ -338,7 +391,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../08_konsep_pemodelan/" class="md-nav__link">
+      <a href="../../08_konsep_pemodelan/" class="md-nav__link">
         08.
       </a>
     </li>
@@ -353,7 +406,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../09_konsep_pemodelan/" class="md-nav__link">
+      <a href="../../09_konsep_pemodelan/" class="md-nav__link">
         09.
       </a>
     </li>
@@ -368,7 +421,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../10_error_handling/" class="md-nav__link">
+      <a href="../../10_error_handling/" class="md-nav__link">
         10. Penanganan Error
       </a>
     </li>
@@ -383,7 +436,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../11_multithreading/" class="md-nav__link">
+      <a href="../../11_multithreading/" class="md-nav__link">
         11. Multi Threading
       </a>
     </li>
@@ -398,7 +451,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../12_io/" class="md-nav__link">
+      <a href="../../12_io/" class="md-nav__link">
         12. Input dan Output I/O
       </a>
     </li>
@@ -413,7 +466,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../13_enkripsi_tradisional/" class="md-nav__link">
+      <a href="../../13_enkripsi_tradisional/" class="md-nav__link">
         13. Enkripsi
       </a>
     </li>
@@ -428,7 +481,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../14_gui_basic/" class="md-nav__link">
+      <a href="../../14_gui_basic/" class="md-nav__link">
         14. GUI Basic
       </a>
     </li>
@@ -443,7 +496,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../15_gui_database/" class="md-nav__link">
+      <a href="../../15_gui_database/" class="md-nav__link">
         15. GUI Database
       </a>
     </li>
@@ -468,21 +521,6 @@
   
   
   
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#tipe-data" class="md-nav__link">
-    Tipe Data
-  </a>
-  
-</li>
-      
-    </ul>
-  
 </nav>
                   </div>
                 </div>
@@ -496,9 +534,9 @@
                   
 
 
-  <h1>03. Variable Tipe Data</h1>
+  <h1>06.2. Array</h1>
 
-<h2 id="tipe-data">Tipe Data</h2>
+<p>test</p>
 
 
 
@@ -519,7 +557,7 @@
     <nav class="md-footer__inner md-grid" aria-label="Footer" >
       
         
-        <a href="../02_praktik_pendekatan_pbo/" class="md-footer__link md-footer__link--prev" aria-label="Previous: 02. Praktik Pendekatan Pemrograman Berorientasi Objek" rel="prev">
+        <a href="../../06_array_list/" class="md-footer__link md-footer__link--prev" aria-label="Previous: 06.1. Array : Intro" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
           </div>
@@ -528,20 +566,20 @@
               <span class="md-footer__direction">
                 Previous
               </span>
-              02. Praktik Pendekatan Pemrograman Berorientasi Objek
+              06.1. Array : Intro
             </div>
           </div>
         </a>
       
       
         
-        <a href="../04_conditional/" class="md-footer__link md-footer__link--next" aria-label="Next: 04. Operator Kondisi" rel="next">
+        <a href="../../07_konsep_pemodelan/" class="md-footer__link md-footer__link--next" aria-label="Next: 07. Konsep Pemodelan" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Next
               </span>
-              04. Operator Kondisi
+              07. Konsep Pemodelan
             </div>
           </div>
           <div class="md-footer__button md-icon">
@@ -572,10 +610,10 @@
       <div class="md-dialog__inner md-typeset"></div>
     </div>
     
-    <script id="__config" type="application/json">{"base": "..", "features": [], "search": "../assets/javascripts/workers/search.16e2a7d4.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.16e2a7d4.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
     
     
-      <script src="../assets/javascripts/bundle.5a2dcb6a.min.js"></script>
+      <script src="../../assets/javascripts/bundle.5a2dcb6a.min.js"></script>
       
     
     
