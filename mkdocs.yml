@@ -8,9 +8,30 @@ theme:
     - csharp
     - java
     - vbnet
+    - kotlin
+
+  palette:
+    # Palette toggle for automatic mode
+    - media: "(prefers-color-scheme)"
+      toggle:
+        icon: material/brightness-auto
+        name: Switch to light mode
+    # Palette toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default 
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      toggle:
+        icon: material/brightness-4
+        name: Switch to system preference
 
 plugin:
   - search
+  - glightbox
 
 markdown_extensions:
   - attr_list
@@ -35,8 +56,8 @@ edit_uri: ""
 nav:
   - Home: 'index.md'
   - "01. Konsep Pemrograman Berorientasi Objek" : "01_konsep_pemrograman_berorientasi_objek.md"
-  - "02. Praktik Pendekatan Pemrograman Berorientasi Objek" : "02_praktik_pendekatan_pbo.md"
-  - "03. Variable Tipe Data" : "03_tipe_data_dan_operator.md"
+  - "02. Praktik Pendekatan PBO" : "02_praktik_pendekatan_pbo.md"
+  - "03. Variable Tipe Data" : "03.1_tipe_data.md"
   - "04. Operator Kondisi" : "04_conditional.md"
   - "05. Operator Perulangan" : "05_loops.md"
   - "06. Tipe data Himpunan / Array" : 
